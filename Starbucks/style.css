@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins' , sans-serrif;
+    
+}
+section{
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    padding-bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    
+
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header ul{
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+.content{
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(203, 238, 220);
+    height:76vh;
+    padding-left: 50px;
+    border-radius: 100px;
+    background: 	rgba(147, 218, 180, 0.811);
+    box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.25);
+
+}
+.starbucks{
+    max-width: 100%;
+}
+.content .text{
+    position: relative;
+    max-width: 700px;
+}
+
+.content .text h2{
+    padding-bottom: 30px;
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .text h2 span{
+    color:#017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .text p{
+    padding-bottom: 20px;
+    color: #333;
+}
+
+.content .text a{
+    display: inline-block;
+    margin-top: 20px;
+    padding:8px 20px;
+    background:#017143;
+    color:#fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .text a:hover{
+    transform: scale(1.15);
+    transition-duration: 0.4s;
+    
+}
+
+.circle{
+    position: absolute;
+    background: #017143;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    clip-path: circle(1000px at right 1200px);
+    z-index: -1;
+}
+.content .img-green{
+    transform: scale(0.9);
+    padding-right:50px;
+    width:600px;
+    display: flex;
+    justify-content: flex-end;
+}
+.socials{
+    position: relative;
+    top: 50%;
+    right:-50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.socials li{
+    list-style: none;
+    margin: 30px;
+    filter: invert(1);
+}
+.socials li:hover{
+    transform: scale(1.3);
+    transition-duration: 0.4s;
+    
+}
+.slider {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left:15%;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+.slider li img{
+    max-width: 60px;
+    margin-right: 35px;
+}
+.slider li{
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.slider li:hover{
+    transform: translateY(-15px);
+}
+.imgBox{
+    max-width: 400px;
+    margin-bottom: 100px;
+    margin-right: 40px;
+}

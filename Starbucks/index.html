@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png" alt=""></a>
+            <ul class="slider">
+                <li><img src="img1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143'),changeCoursorColor('#017143'),changeContentColor('rgba(147, 218, 180, 0.811)')"></li>
+                <li><img src="img2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495'),changeCoursorColor('#eb7495'),changeContentColor('rgba(222, 164, 174, 0.811)')"></li>
+                <li><img src="img3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1'),changeCoursorColor('#d752b1'),changeContentColor('rgba(224, 146, 230, 0.811)')"></li>
+    
+            </ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>It's not just coffee<br>It's <span class="typed1">Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+                    possimus ipsam temporibus voluptatem dolor debitis, officiis cum
+                    delectus asperiores nam, unde earum doloremque nesciunt esse.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        
+        <ul class="socials">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+        </ul> 
+    </section>
+    <script type="text/javascript">
+        function imgSlider (anything){
+            document. querySelector ('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function changeContentColor(color){
+            const circle = document.querySelector('.content');
+            circle.style.background = color;
+        }
+        function changeCoursorColor(color){
+            const circle = document.querySelector('.typed1');
+            circle.style.color = color;
+        }
+    </script>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+        let typingText = new Typed(".typed1",{
+            strings : ["Starbucks","Emotion",],
+            loop:true,
+            typeSpeed:100,
+            backSpeed:50,
+            backDelay: 100
+        })
+    </script>
+    
+
+</body>
+
+</html> 
